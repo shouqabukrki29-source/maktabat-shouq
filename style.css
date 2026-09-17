@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:'Cairo',sans-serif;background:#fffafc;color:#443b4a}
+header{position:sticky;top:0;z-index:5;background:#fffafcf2;backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:16px 8%;border-bottom:1px solid #f1e3ea}
+.logo{font-size:22px;font-weight:700;color:#a45d7d}
+nav{display:flex;gap:24px}
+nav a{text-decoration:none;color:#665b68;font-weight:600}
+nav a:hover{color:#b86b8e}
+.hero{min-height:75vh;padding:70px 10%;display:flex;align-items:center;justify-content:space-between;gap:40px;background:linear-gradient(135deg,#fff7fa,#f8f3ff)}
+.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.35;margin:18px 0}
+.hero h1 span{color:#b9688c}
+.hero p{font-size:18px;max-width:600px;line-height:2;color:#716673}
+.tag{background:#f6dce8;color:#985b78;padding:8px 16px;border-radius:30px;font-weight:600}
+.button,.card button{display:inline-block;border:0;background:#b9688c;color:white;padding:12px 22px;border-radius:30px;font-family:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+.hero-book{width:230px;height:230px;border-radius:50%;background:#f4dce7;display:grid;place-items:center;font-size:110px;box-shadow:0 20px 50px #d9b8c866}
+.section{padding:75px 9%;text-align:center}
+h2{font-size:34px;margin:0 0 8px;color:#79536a}
+.subtitle{color:#8b7b88;margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1050px;margin:auto}
+.card{background:white;border:1px solid #f0e2e9;border-radius:24px;padding:28px;box-shadow:0 10px 30px #8f6a7b12}
+.icon{font-size:45px}
+.card h3{color:#81556b}
+.card p{line-height:1.9;color:#776b76;min-height:58px}
+.card button{margin-top:10px}
+.about{margin:20px 9% 80px;padding:50px;text-align:center;border-radius:28px;background:#f6f0fa}
+.about p{color:#756b79}
+footer{text-align:center;padding:25px;background:#f5eaf0;color:#7b6571}
+.message{position:fixed;bottom:25px;left:50%;transform:translateX(-50%) translateY(120px);background:#594654;color:#fff;padding:13px 22px;border-radius:30px;transition:.3s;z-index:10}
+.message.show{transform:translateX(-50%) translateY(0)}
+@media(max-width:700px){header{padding:14px 5%;flex-direction:column;gap:8px}nav{gap:14px;font-size:14px}.hero{padding:55px 7%;text-align:center;flex-direction:column}.hero-book{width:170px;height:170px;font-size:80px}.cards{grid-template-columns:1fr}.section{padding:60px 7%}}

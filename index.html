@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مكتبة مدرستنا 📚</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">📚 مكتبة مدرستنا</div>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#books">الكتب</a>
+    <a href="#about">عن المكتبة</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <span class="tag">مكانك الهادئ للقراءة ✨</span>
+    <h1>أهلًا بكِ في<br><span>مكتبة مدرستنا</span> 🌷</h1>
+    <p>اكتشفي كتبًا جميلة، اختاري ما يناسبكِ، وخلي القراءة جزءًا لطيفًا من يومكِ.</p>
+    <a class="button" href="#books">تصفحي الكتب 📖</a>
+  </div>
+  <div class="hero-book">📖</div>
+</section>
+
+<section id="books" class="section">
+  <h2>كتبنا المفضلة 💕</h2>
+  <p class="subtitle">مجموعة بسيطة ومتنوعة للطالبات</p>
+  <div class="cards">
+    <article class="card"><div class="icon">🌸</div><h3>روايات وقصص</h3><p>قصص ممتعة تأخذكِ إلى عوالم مختلفة.</p><button onclick="showMessage('قسم الروايات والقصص قريبًا 💗')">استكشفي القسم</button></article>
+    <article class="card"><div class="icon">🔬</div><h3>علوم ومعرفة</h3><p>كتب تساعدكِ على التعلم واكتشاف أشياء جديدة.</p><button onclick="showMessage('قسم العلوم والمعرفة قريبًا 🔬✨')">استكشفي القسم</button></article>
+    <article class="card"><div class="icon">🎨</div><h3>إبداع وفنون</h3><p>أفكار وكتب للرسم والإبداع وتنمية المواهب.</p><button onclick="showMessage('قسم الإبداع والفنون قريبًا 🎨🌷')">استكشفي القسم</button></article>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>عن مكتبة مدرستنا 🌷</h2>
+  <p>مساحة مدرسية لطيفة تجمع الكتب والمعرفة والإبداع في مكان واحد.</p>
+</section>
+</main>
+
+<footer>صُمّم بحب لمجتمع مدرستنا 💗 © 2026</footer>
+<div id="message" class="message"></div>
+<script src="script.js"></script>
+</body>
+</html>
