@@ -6,9 +6,12 @@
 <title>مكتبة مدرستنا 📚</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header>
   <div class="logo">📚 مكتبة مدرستنا</div>
+
   <nav>
     <a href="#home">الرئيسية</a>
     <a href="#books">الكتب</a>
@@ -17,48 +20,163 @@
 </header>
 
 <main>
+
+<!-- الرئيسية -->
 <section id="home" class="hero">
   <div>
     <span class="tag">مكانك الهادئ للقراءة ✨</span>
-    <h1>أهلًا بكِ في<br><span>مكتبة مدرستنا</span> 🌷</h1>
-    <p>اكتشفي كتبًا جميلة، اختاري ما يناسبكِ، وخلي القراءة جزءًا لطيفًا من يومكِ.</p>
+
+    <h1>
+      أهلًا بكِ في<br>
+      <span>مكتبة مدرستنا</span> 🌷
+    </h1>
+
+    <p>
+      اكتشفي كتبًا جميلة، اختاري ما يناسبكِ،
+      وخلي القراءة جزءًا لطيفًا من يومكِ.
+    </p>
+
     <a class="button" href="#books">تصفحي الكتب 📖</a>
   </div>
+
   <div class="hero-book">📖</div>
 </section>
 
+
+<!-- الأقسام والكتب -->
 <section id="books" class="section">
-  <h2>كتبنا المفضلة 💕</h2>
-  <p class="subtitle">مجموعة بسيطة ومتنوعة للطالبات</p>
+
+  <h2>مكتبة الكتب 💕</h2>
+  <p class="subtitle">اختاري القسم الذي تحبينه واكتشفي الكتب الموجودة فيه 📚</p>
+
   <div class="cards">
-    <article class="card"><div class="icon">🌸</div><h3>روايات وقصص</h3><p>قصص ممتعة تأخذكِ إلى عوالم مختلفة.</p><button onclick="showMessage('قسم الروايات والقصص قريبًا 💗')">استكشفي القسم</button></article>
-    <article class="card"><div class="icon">🔬</div><h3>علوم ومعرفة</h3><p>كتب تساعدكِ على التعلم واكتشاف أشياء جديدة.</p><button onclick="showMessage('قسم العلوم والمعرفة قريبًا 🔬✨')">استكشفي القسم</button></article>
-    <article class="card"><div class="icon">🎨</div><h3>إبداع وفنون</h3><p>أفكار وكتب للرسم والإبداع وتنمية المواهب.</p><button onclick="showMessage('قسم الإبداع والفنون قريبًا 🎨🌷')">استكشفي القسم</button></article>
+
+    <!-- الروايات والقصص -->
+    <details class="card">
+      <summary>📖 روايات وقصص</summary>
+
+      <p>قصص وروايات ممتعة تأخذكِ إلى عوالم مختلفة ✨</p>
+
+      <div class="book-list">
+
+        <div class="book-item">
+          <span>🌷</span>
+          <strong>الأمير الصغير</strong>
+          <small>أنطوان دو سانت إكزوبيري</small>
+          <a class="button" href="little-prince.pdf" target="_blank">
+            قراءة الكتاب 📖
+          </a>
+        </div>
+
+        <div class="book-item">
+          <span>📕</span>
+          <strong>نظرية الفستق</strong>
+          <small>فهد عامر الأحمدي</small>
+          <a class="button" href="theory-pistachio.pdf" target="_blank">
+            قراءة الكتاب 📖
+          </a>
+        </div>
+
+      </div>
+    </details>
+
+
+    <!-- العلوم والمعرفة -->
+    <details class="card">
+      <summary>🔬 علوم ومعرفة</summary>
+
+      <p>كتب تساعدكِ على التعلم واكتشاف أشياء جديدة 🧠✨</p>
+
+      <div class="book-list">
+
+        <div class="book-item">
+          <span>🔬</span>
+          <strong>كتاب العلوم</strong>
+          <small>كتب تعليمية ومعرفية</small>
+          <a class="button" href="#">
+            قراءة الكتاب 📖
+          </a>
+        </div>
+
+        <div class="book-item">
+          <span>🧠</span>
+          <strong>كتاب المعرفة</strong>
+          <small>اكتشفي معلومات جديدة</small>
+          <a class="button" href="#">
+            قراءة الكتاب 📖
+          </a>
+        </div>
+
+      </div>
+    </details>
+
+
+    <!-- الإبداع والفنون -->
+    <details class="card">
+      <summary>🎨 إبداع وفنون</summary>
+
+      <p>كتب للرسم والفن والإبداع وتنمية المواهب 🌸</p>
+
+      <div class="book-list">
+
+        <div class="book-item">
+          <span>🎨</span>
+          <strong>كتاب الفنون</strong>
+          <small>أفكار جميلة للفن والإبداع</small>
+          <a class="button" href="#">
+            قراءة الكتاب 📖
+          </a>
+        </div>
+
+        <div class="book-item">
+          <span>🖌️</span>
+          <strong>كتاب الرسم والإبداع</strong>
+          <small>طوّري موهبتكِ وأفكاركِ</small>
+          <a class="button" href="#">
+            قراءة الكتاب 📖
+          </a>
+        </div>
+
+      </div>
+    </details>
+
   </div>
 </section>
-<div class="cards">
-  <article class="card">
-    <div class="icon">📖</div>
-    <h3>الأمير الصغير</h3>
-    <p>أنطوان دو سانت إكزوبيري</p>
-    <button onclick="showMessage('الأمير الصغير 📖✨')">عرض الكتاب</button>
-  </article>
 
-  <article class="card">
-    <div class="icon">🌍</div>
-    <h3>حول العالم في 80 يومًا</h3>
-    <p>جول فيرن</p>
-    <button onclick="showMessage('حول العالم في 80 يومًا 🌍📚')">عرض الكتاب</button>
-  </article>
-</div>
+
+<!-- عن المكتبة -->
 <section id="about" class="about">
+
   <h2>عن مكتبة مدرستنا 🌷</h2>
-  <p>مساحة مدرسية لطيفة تجمع الكتب والمعرفة والإبداع في مكان واحد.</p>
+
+  <p>
+    مساحة مدرسية لطيفة تجمع الكتب والمعرفة والإبداع في مكان واحد.
+  </p>
+
+  <p>
+    <strong>اسم المدرسة:</strong>
+    مدرسة نسيبة المازنية 🏫
+  </p>
+
+  <p>
+    <strong>مديرة المدرسة:</strong>
+    سلمى أبو طه 👩🏻‍🏫
+  </p>
+
 </section>
+
 </main>
 
-<footer>صُمّم بحب لمجتمع مدرستنا 💗 © 2026</footer>
+
+<footer>
+  صُمّم بحب لمجتمع مدرستنا 💗 © 2026
+  <br>
+  إعداد وتصميم: شوق أبو كركي 🌷
+</footer>
+
 <div id="message" class="message"></div>
+
 <script src="script.js"></script>
+
 </body>
-</html>
+    </html>
